@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+
+<head>
+<title>WX-Satellites</title>
+
+<link rel="stylesheet" href="/index.css">
+
+</head>
+
+<body>
+
+<button class="button button-green" onclick="document.location='/'">Home</button>
+
+<button class="button button-green" onclick="document.location='/blog'">Blog?</button>
+
+<h1>Weather Satellites</h1>
+
+<br>
+
+<p style="text-align: center">
+
+Receiving and decoding weather satellite transmissions has been an incredibly enjoyable and rewarding hobby for me. I began decoding satellite passes around 2019, and it’s a passion I’ve pursued ever since.
+
+</p>
+<p style="text-align: center">
+
+I have decoded weather data from the polar-orbiting NOAA and METEOR satellite series, as well as the geostationary GOES-16 satellite. NOTE: GOES-16 will soon transition out of its current orbit to make way for GOES-19. In the meantime, GOES-19 is actively transmitting images as it moves into its designated orbit. It's possible that when you are reading this that GOES-16 and GOES-19 have already moved to their new missions and this is old news.
+
+</p>
+
+<p style="text-align: center">
+
+Satellites transmit various 'products' down to Earth, including APT, LRPT, HRPT, and HRIT. Among these, APT and LRPT operate in the 137 MHz frequency band, making them easy to pick up using a homemade antenna and a software-defined radio (SDR) connected to a computer.
+
+</p>
+
+<!-- Find a good WX station pic to put here! -->
+<img src="WXantenna.jpg" style="width:360px;hight:662px;">
+
+<h6>A home made weather satellite antenna I made connected to a raspberry pi recording/processing NOAA passes. I cleaned it up with some AI so the trampoline in the background looks really odd lol.</h6>
+
+<p style="text-align: center">
+
+I spent an afternoon with a friend to make this "Double Cross Antenna" based on <a href="https://www.qsl.net/py4zbz/DCA.pdf">this</a> design.
+
+</p>
+
+<br>
+<br>
+<br>
+
+<!-- Find a good apt pic to put here! -->
+<img src="NOAA18.png" style="width:694px;hight:292px;">
+
+<h6>APT (Automatic Picture transmission) on 137Mhz received from NOAA18 on the DCA pictured above.</h6>
+
+<br>
+
+<p style="text-align: center">
+
+These images are fascinating to examine! Many programs designed to decode APT offer various enhancements for the images, such as false color. However, the false color options are somewhat limited since APT only transmits two channels. In contrast, LRPT from meteor satellites provides superior false color capabilities, as it includes three IR channels.
+
+</p>
+
+<p style="text-align: center">
+
+LRPT delivers higher resolution than APT and transmits an additional channel, resulting in images that are, in my opinion, much more captivating. The false color also appears significantly enhanced, adding to their visual appeal.
+
+</p>
+
+</body>
+
+<footer>
+</footer>
