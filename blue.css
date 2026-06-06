@@ -1,0 +1,140 @@
+html {
+    overflow-y: scroll;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Courier New', monospace;
+	background-color: #1d1d1d;
+    margin: 0;
+    padding: 0;
+    min-height: 100vh;
+    position: relative;
+}
+
+body::before {
+    content: "";
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: -1;
+    background-image: url('matrix2.gif');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    filter: hue-rotate(120deg);
+}
+
+.box {
+    max-width: 1000px;
+    margin: 50px auto;
+    display: grid;
+    grid-gap: 10px;
+    grid-template-columns: 200px minmax(0, 1fr);
+    filter: hue-rotate(120deg);
+}
+
+nav, main {
+    border: lime 2px solid;
+    background-color: #575757;
+    border-radius: 5px;
+    padding: 5px 5px;
+    color: lime;
+    
+}
+
+header {
+    grid-row: 1 / 2;
+    grid-column: 1 / 4;
+}
+
+nav {
+    grid-row: 2 / 3;
+    grid-column: 1 / 2;
+    height: max-content;
+    background-color: #1d1d1d;
+
+}
+
+main {
+    grid-row: 2 / 3;
+    grid-column: 2 / 3;
+    height: max-content;
+    background-color: #1d1d1d;
+}
+
+sidebar {
+    grid-row 2 / 3;
+    grid-column: 3 / 4;
+    height: max-content;
+}
+
+header h1 {
+    margin: 10px 0;
+    color: lime;
+    margin: 5px auto;
+    text-align: center;
+}
+
+main p {
+    margin: 5px 0;
+}
+
+nav h4 {
+    text-align: center;
+}
+
+footer {
+    grid-row: 3 / 4;
+    grid-column: 1 / 4;
+}
+
+footer p {
+    background: #57575780;
+    border-radius: 10px;
+    width: max-content;
+    margin: 0 auto;
+    font-weight: bold;
+    padding: 5px;
+    color: lime;
+}
+
+ul {
+    padding: 0;
+    margin: 10px 0;
+    
+}
+
+ul li::marker {
+    content: none;
+}
+
+nav a:link {
+    color: #54ff82;
+    font-weight: bold;
+}
+
+nav a:visited {
+    color: #669e65
+}
+
+nav a:hover {
+    color: #97d94c;
+}
+
+nav a:active {
+    color: #0008ff;
+}
+
+h4 {
+    margin: 10px 0;
+}
+
+img {
+    max-width: 100%;
+    display: block;
+    margin: 0 auto;
+}
