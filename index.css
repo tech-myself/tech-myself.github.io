@@ -1,20 +1,10 @@
-html {
-    overflow-y: scroll;
-    margin: 0;
-    padding: 0;
-}
-
 body {
     font-family: 'Courier New', monospace;
 	background-color: #1d1d1d;
-    background-image: url('matrix2.gif');
+    background-image: url('matrix.gif');
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
-    margin: 0;
-    padding: 0;
-    min-height: 100vh;
-    position: relative;
 }
 
 .box {
