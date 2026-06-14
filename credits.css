@@ -22,6 +22,7 @@ nav, main, .litem1, .litem2, aside.right-sidebar {
     background-color: lightgray;
     border-radius: 5px;
     padding: 5px 5px;
+    background: rgba(255, 255, 255, 0.6);
     color: black;
 }
 
@@ -73,6 +74,7 @@ main p {
 
 nav h4 {
     text-align: center;
+    text-shadow: 1px 1px gray;
 }
 
 .litem1 p {

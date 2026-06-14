@@ -72,6 +72,7 @@ main p {
 
 nav h4 {
     text-align: center;
+    text-shadow: 2px 2px darkgreen;
 }
 
 .litem1 p {
