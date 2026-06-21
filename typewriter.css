@@ -1,11 +1,12 @@
 body {
     font-family: 'Courier New', monospace;
-	background-color: black;
-    background-image: url('media/cali-lick.png');
+	/* background-color: #1a1a1a; */
+    background-image: url('media/typewriters/type-bg.png');
     /* background-size: cover; */
-    background-position: center;
+    /* background-position: top; */
     /* background-repeat: no-repeat; */
     background-attachment: fixed;
+    /* image-rendering: pixelated; */
 }
 
 .box {
@@ -13,17 +14,25 @@ body {
     margin: 0px auto;
     display: grid;
     grid-gap: 10px;
-    grid-template-columns: 200px minmax(0, 1fr) 200px;
+    grid-template-columns: 200px minmax(0, 1fr) auto;
     grid-template-rows: auto max-content 1fr auto;
-    row-gap: 0;
 }
 
-nav, main, .litem1, .litem2 {
-    border: darkgray 5px solid;
-    background: rgba(128, 128, 128, 0.9);
+nav, .litem1, .litem2, aside.right-sidebar {
+    border: lightgray 5px solid;
+    /* background: rgba(255, 255, 255, 0.3); */
     border-radius: 5px;
     padding: 5px 5px;
-    color: white;
+    color: black;
+    background: white;
+}
+
+main {
+    border: lightgray 5px solid;
+    border-radius: 5px;
+    padding: 5px 5px;
+    /* background: rgba(255, 255, 255, 0.3); */
+    background: white;
 }
 
 header {
@@ -50,36 +59,27 @@ main {
 aside.right-sidebar {
     grid-row: 2 / 4;
     grid-column: 3 / 4;
-    height: auto;
+    height: max-content;
     display: flex;
     flex-direction: column;
     gap: 5px;
     flex-shrink: 0;
 }
 
-aside.right-sidebar {
-    text-align: center;
-    margin: 0;
-
-}
-
 aside.right-sidebar p {
-    text-align: center;
     margin: 0;
-}
-
-aside.right-sidebar img {
-    display: block;
-    max-width: 100%;
-    height: auto;
 }
 
 header h1 {
-    color: white;
-    text-shadow: 3px 3px gray;
-    margin: 0px auto;
+    margin: 0px 0;
+    color: White;
     text-align: center;
-    font-size: 60px;
+    font-size: 50px;
+}
+
+header img {
+    display: block;
+    margin: 0 auto;
 }
 
 main p {
@@ -88,7 +88,7 @@ main p {
 
 nav h4 {
     text-align: center;
-    text-shadow: 1px 1px lightgray;
+    text-shadow: 1px 1px darkgray;
 }
 
 .litem1 p {
@@ -128,20 +128,16 @@ ul li::marker {
 }
 
 nav a:link {
-;
     font-weight: bold;
 }
 
 nav a:visited {
-
 }
 
 nav a:hover {
-
 }
 
 nav a:active {
-
 }
 
 h4 {
@@ -152,5 +148,5 @@ img {
     max-width: 100%;
     display: block;
     margin: 0 auto;
-    padding: 0;
+    vertical-align: bottom;
 }
