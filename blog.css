@@ -1,5 +1,6 @@
 body {
     /* font-family: 'Courier New', monospace; */
+    font-family: "whiterabbit";
     background-color: #1d1d1d;
     background-image: url('media/stars3.gif');
     /* background-size: cover;
@@ -27,13 +28,13 @@ body {
 }
 
 nav, main, .litem1, .litem2, aside.right-sidebar {
-    border: silver 5px double;
+    border: lime 1px solid;
     /* border-style: outset; */
     background-color: lightgray;
     /* border-radius: 5px; */
     padding: 5px 5px;
-    background: rgba(255, 255, 255, 0.4);
-    color: black;
+    background: rgba(0, 0, 0, 0.6);
+    color: lime;
 }
 
 main {
@@ -78,7 +79,7 @@ aside.right-sidebar p {
 
 header h1 {
     margin: 10px 0;
-    color: #0004ff;
+    color: lime;
     margin: 5px auto;
     text-align: center;
     font-family: whiterabbit;
@@ -86,11 +87,13 @@ header h1 {
 
 main p {
     margin: 5px 0;
+    color: lime;
+    text-shadow: 2px 2px darkgreen;
 }
 
 nav h4 {
     text-align: center;
-    text-shadow: 1px 1px gray;
+    text-shadow: 1px 1px darkgreen;
 }
 
 .litem1 p {
@@ -116,7 +119,7 @@ footer p {
     font-weight: bold;
     font-size: 11px;
     padding: 5px;
-    color: white;
+    color: lime;
 }
 
 ul {
@@ -164,6 +167,11 @@ img {
     display: flex;
     justify-content: center;
     gap: 0px;
+}
+
+li a {
+    display: inline-block;
+    margin: 3px;
 }
 
 [id] {

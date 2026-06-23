@@ -1,10 +1,11 @@
 body {
     font-family: 'Courier New', monospace;
-	background-color: #1d1d1d;
-    background-image: url('media/diet-coke.gif');
+    background-color: #1d1d1d;
+    background-image: url('media/flowerz.png');
     /* background-size: cover; */
     /* background-position: center; */
     /* background-repeat: no-repeat; */
+    background-attachment: fixed;
 }
 
 .box {
