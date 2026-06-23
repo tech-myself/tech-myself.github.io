@@ -1,5 +1,5 @@
 body {
-    font-family: 'Courier New', monospace;
+    /* font-family: 'Courier New', monospace; */
     background-color: #1d1d1d;
     background-image: url('media/stars3.gif');
     /* background-size: cover;
@@ -10,6 +10,11 @@ body {
 @font-face {
     font-family: "Minecraft";
     src: url("fonts/Minecraft.ttf") format("truetype");
+}
+
+@font-face {
+    font-family: "whiterabbit";
+    src: url("fonts/WhiteRabbit.woff2") format("woff2");
 }
 
 .box {
@@ -32,7 +37,7 @@ nav, main, .litem1, .litem2, aside.right-sidebar {
 }
 
 main {
-    font-family: Minecraft;
+    font-family: "whiterabbit";
     font-size: 25px;
 }
 
@@ -76,7 +81,7 @@ header h1 {
     color: #0004ff;
     margin: 5px auto;
     text-align: center;
-    font-family: Minecraft;
+    font-family: whiterabbit;
 }
 
 main p {
