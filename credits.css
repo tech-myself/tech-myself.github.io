@@ -7,6 +7,11 @@ body {
     background-repeat: no-repeat;
 }
 
+@font-face {
+    font-family: "whiterabbit";
+    src: url("fonts/WhiteRabbit.woff2") format("woff2");
+}
+
 .box {
     max-width: 1050px;
     margin: 0px auto;
@@ -66,10 +71,12 @@ header h1 {
     color: gold;
     margin: 5px auto;
     text-align: center;
+    font-family: whiterabbit;
 }
 
 main p {
     margin: 5px 0;
+    font-family: whiterabbit;
 }
 
 nav h4 {

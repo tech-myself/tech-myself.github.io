@@ -3,9 +3,9 @@ body {
     font-family: "whiterabbit";
     background-color: #1d1d1d;
     background-image: url('media/stars3.gif');
-    /* background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat; */
+    /* background-size: cover; */
+    background-attachment: fixed;
+    /* background-repeat: no-repeat; */
 }
 
 @font-face {
@@ -78,9 +78,8 @@ aside.right-sidebar p {
 }
 
 header h1 {
-    margin: 10px 0;
     color: lime;
-    margin: 5px auto;
+    margin: 0px auto;
     text-align: center;
     font-family: whiterabbit;
 }
@@ -89,6 +88,7 @@ main p {
     margin: 5px 0;
     color: lime;
     text-shadow: 2px 2px darkgreen;
+    line-height: 1;
 }
 
 nav h4 {
@@ -132,17 +132,20 @@ ul li::marker {
     content: none;
 }
 
-nav a:link {
+a:link {
     font-weight: bold;
+    color: lime;
 }
 
-nav a:visited {
+a:visited {
+    color: darkgreen;
 }
 
-nav a:hover {
+a:hover {
+    color: greenyellow;
 }
 
-nav a:active {
+a:active {
 }
 
 h4 {
