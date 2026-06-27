@@ -159,6 +159,16 @@ img {
     vertical-align: bottom;
 }
 
+.right {
+    float: right;
+    margin-left: 10px;
+}
+
+.left {
+    float: left;
+    margin-right: 10px;
+}
+
 .images {
     display: flex;
     flex-direction: column;
