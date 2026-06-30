@@ -1,16 +1,16 @@
 @font-face {
     font-family: "one47";
-    src: url("fonts/oneFortySevenRegular.woff2") format("woff2");
+    src: url("fonts/OneFortySevenRegular.woff2") format("woff2");
 }
 
 body {
     /* font-family: 'Courier New', monospace; */
     font-family: "one47";
     background-color: #1d1d1d;
-    background-image: url('media/blue-paper.jpg');
-    background-size: cover;
+    background-image: url('media/bookshelf/bookshelf-bg.png');
+    /* background-size: cover; */
     background-attachment: fixed;
-    background-repeat: no-repeat;
+    /* background-repeat: no-repeat; */
 }
 
 .box {
