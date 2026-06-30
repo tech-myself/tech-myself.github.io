@@ -76,6 +76,7 @@ header h1 {
 
 main p {
     margin: 5px 0;
+    text-shadow: 1px 1px gray;
 }
 
 nav h4 {

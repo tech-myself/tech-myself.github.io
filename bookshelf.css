@@ -1,0 +1,268 @@
+@font-face {
+    font-family: "one47";
+    src: url("fonts/oneFortySevenRegular.woff2") format("woff2");
+}
+
+body {
+    /* font-family: 'Courier New', monospace; */
+    font-family: "one47";
+    background-color: #1d1d1d;
+    background-image: url('media/blue-paper.jpg');
+    background-size: cover;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+}
+
+.box {
+    max-width: 1050px;
+    margin: 0px auto;
+    display: grid;
+    grid-gap: 10px;
+    grid-template-columns: 200px minmax(0, 1fr) auto;
+    grid-template-rows: auto max-content 1fr auto;
+}
+
+nav, main, .litem1, .litem2, aside.right-sidebar {
+    border: white 1px solid;
+    /* border-style: outset; */
+    /* border-radius: 5px; */
+    padding: 5px 5px;
+    background: rgba(0, 0, 0, 0.5);
+    color: white;
+}
+
+.bookshelf {
+    border: 20px solid;
+    height: 40vh;
+    border-image: url("media/wood.jpg") 30;
+    background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.5)), url(media/wood.jpg);
+    background-size: cover;
+}
+
+.shelf {
+    border-bottom: 20px solid;
+    /* height: 40vh; */
+    border-image: url("media/wood.jpg") 30;
+}
+
+.shelf h1 {
+    color: white;
+    text-shadow: 1px 1px gray;
+    background: rgba(214, 203, 118, 0.9);
+    border-radius: 10px;
+    width: max-content;
+    margin: 0 auto;
+    padding: 5px;
+}
+
+.bottomshelf h1 {
+    color: white;
+    text-shadow: 1px 1px gray;
+    background: rgba(214, 203, 118, 0.9);
+    border-radius: 10px;
+    width: max-content;
+    margin: 0 auto;
+    padding: 5px;
+}
+
+main {
+    font-family: "one47";
+    font-size: 25px;
+}
+
+header {
+    grid-row: 1 / 2;
+    grid-column: 1 / 4;
+}
+
+.left-sidebar {
+    grid-row: 2 / 4;
+    grid-column: 1 / 2;
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    flex-shrink: 0;
+}
+
+.bookshelf {
+    grid-row: 2 / 3;
+    grid-column: 2 / 3;
+    height: max-content;
+    margin: 0;
+}
+
+main {
+    grid-row: 3 / 4;
+    grid-column: 2 / 3;
+    height: max-content;
+    margin: 0;
+}
+
+aside.right-sidebar {
+    grid-row: 2 / 4;
+    grid-column: 3 / 4;
+    height: max-content;
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    flex-shrink: 0;
+}
+
+aside.right-sidebar p {
+    margin: 0;
+}
+
+header h1 {
+    color: white;
+    margin: 0px auto;
+    text-align: center;
+    font-family: one47;
+    text-shadow: 3px 3px gray;
+    font-size: 100px;
+}
+
+header {
+    background: rgba(0, 0, 0, 0.5);
+    border-radius: 10px;
+    width: max-content;
+    margin: 0 auto;
+    padding: 5px;
+}
+
+main p {
+    margin: 5px 0;
+    color: white;
+    text-shadow: 2px 2px gray;
+    line-height: 1;
+}
+
+.bookshelf p {
+    margin: 5px 0;
+    color: white;
+    text-shadow: 2px 2px gray;
+    line-height: 1;
+}
+
+nav h4 {
+    text-align: center;
+    text-shadow: 1px 1px gray;
+}
+
+.litem1 p {
+    text-align: center;
+    margin: 0;
+}
+
+.litem2 p {
+    text-align: center;
+    margin: 0;
+}
+
+footer {
+    grid-row: 4 / 5;
+    grid-column: 1 / 4;
+}
+
+footer p {
+    background: #57575780;
+    border-radius: 10px;
+    width: max-content;
+    margin: 0 auto;
+    font-weight: bold;
+    font-size: 11px;
+    padding: 5px;
+    color: white;
+}
+
+ul {
+    padding: 0;
+    margin: 10px 0;
+    
+}
+
+ul li::marker {
+    content: none;
+}
+/*
+a:link {
+    font-weight: bold;
+    color: lime;
+}
+
+a:visited {
+    color: darkgreen;
+}
+
+a:hover {
+    color: greenyellow;
+}
+
+a:active {
+}
+*/
+h4 {
+    margin: 10px 0;
+}
+
+img {
+    max-width: 100%;
+    display: inline;
+    margin: 0 0px;
+    vertical-align: bottom;
+}
+
+.right {
+    float: right;
+    margin-left: 10px;
+}
+
+.left {
+    float: left;
+    margin-right: 10px;
+}
+
+.images {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 0px;
+}
+
+.images-row {
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    gap: 0px;
+}
+
+li a {
+    display: inline-block;
+    margin: 3px;
+}
+
+[id] {
+    display: none;
+}
+
+[id]:target {
+    display:block;
+}
+
+.litem1 ul {
+  
+    list-style-type:none; /* this removes the bulletpoints */
+    /* there is an annoying left padding in the ul element by default */
+    padding-left:0; /* this removes it */
+}
+
+.litem1 li a {
+    display:inline-block; /* this allows us to add margin to each item 
+                           so there's space for it to rotate */
+    margin:10px;
+}
+
+/* this makes stuff happen when you hover! */
+.litem1 li a:hover {
+    transform:rotate(-15deg); /* play with this 15deg value, works w/ negatives too! */
+    /* more CSS transform options: https://developer.mozilla.org/en-US/docs/Web/CSS/transform */
+}
