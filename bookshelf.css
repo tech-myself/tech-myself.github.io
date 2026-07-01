@@ -7,8 +7,8 @@ body {
     /* font-family: 'Courier New', monospace; */
     font-family: "one47";
     background-color: #1d1d1d;
-    background-image: url('media/bookshelf/bookshelf-bg.png');
-    /* background-size: cover; */
+    background-image: url('media/bookshelf/tile-bg.png');
+    background-size: 150px;
     background-attachment: fixed;
     /* background-repeat: no-repeat; */
 }
@@ -23,16 +23,16 @@ body {
 }
 
 nav, main, .litem1, .litem2, aside.right-sidebar {
-    border: white 1px solid;
+    border: #a8bd20 1px solid;
     /* border-style: outset; */
-    /* border-radius: 5px; */
+    border-radius: 2px;
     padding: 5px 5px;
-    background: rgba(0, 0, 0, 0.5);
+    background: rgba(0, 0, 0, 0.7);
     color: white;
 }
 
 .bookshelf {
-    border: 20px solid;
+    border: 15px solid;
     height: 40vh;
     border-image: url("media/wood.jpg") 30;
     background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.5)), url(media/wood.jpg);
@@ -65,14 +65,9 @@ nav, main, .litem1, .litem2, aside.right-sidebar {
     padding: 5px;
 }
 
-main {
-    font-family: "one47";
-    font-size: 25px;
-}
-
 header {
     grid-row: 1 / 2;
-    grid-column: 1 / 4;
+    grid-column: 2 / 3;
 }
 
 .left-sidebar {
@@ -113,27 +108,40 @@ aside.right-sidebar p {
 }
 
 header h1 {
-    color: white;
-    margin: 0px auto;
+    color: #a8bd20;
+    margin: 0 auto;
+    margin-bottom: -30px;
+    margin-right: 8px;
     text-align: center;
     font-family: one47;
-    text-shadow: 3px 3px gray;
+    text-shadow: 3px 3px black;
     font-size: 100px;
 }
 
 header {
     background: rgba(0, 0, 0, 0.5);
     border-radius: 10px;
-    width: max-content;
     margin: 0 auto;
-    padding: 5px;
+    width: max-content;
+    padding: 10px;
+}
+
+main {
+    font-family: "one47";
+    font-size: 30px;
 }
 
 main p {
     margin: 5px 0;
     color: white;
-    text-shadow: 2px 2px gray;
+    text-shadow: 1px 1px black;
     line-height: 1;
+}
+
+main h1 {
+    margin: 5px 0;
+    color: #a8bd20;
+    text-shadow: 3px 3px black;
 }
 
 .bookshelf p {
@@ -146,6 +154,11 @@ main p {
 nav h4 {
     text-align: center;
     text-shadow: 1px 1px gray;
+    font-size: 25px;
+}
+
+nav {
+    font-size: 20px;
 }
 
 .litem1 p {
@@ -160,7 +173,7 @@ nav h4 {
 
 footer {
     grid-row: 4 / 5;
-    grid-column: 1 / 4;
+    grid-column: 2 / 3;
 }
 
 footer p {
@@ -169,9 +182,9 @@ footer p {
     width: max-content;
     margin: 0 auto;
     font-weight: bold;
-    font-size: 11px;
+    font-size: 15px;
     padding: 5px;
-    color: white;
+    color: #a8bd20;
 }
 
 ul {
@@ -183,23 +196,23 @@ ul {
 ul li::marker {
     content: none;
 }
-/*
+
 a:link {
     font-weight: bold;
-    color: lime;
+    color: yellow;
 }
 
 a:visited {
-    color: darkgreen;
+    color: #a8bd20;
 }
 
 a:hover {
-    color: greenyellow;
+    color: orange;
 }
 
 a:active {
 }
-*/
+
 h4 {
     margin: 10px 0;
 }
@@ -226,13 +239,14 @@ img {
     flex-direction: column;
     align-items: center;
     gap: 0px;
+    margin-top: 5px;
 }
 
 .images-row {
     display: flex;
     justify-content: center;
     align-items: flex-end;
-    gap: 0px;
+    gap: 5px;
 }
 
 li a {
