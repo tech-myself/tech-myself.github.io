@@ -7,7 +7,7 @@ body {
     /* font-family: 'Courier New', monospace; */
     font-family: "one47";
     background-color: #1d1d1d;
-    background-image: url('media/bookshelf/tile-bg.png');
+    background-image: url('media/bookshelf/tile-bg.webp');
     background-size: 150px;
     background-attachment: fixed;
     /* background-repeat: no-repeat; */
@@ -232,6 +232,13 @@ img {
 .left {
     float: left;
     margin-right: 10px;
+}
+
+h6 {
+    margin: auto;
+    margin-top: 5px;
+    font-size: 15px;
+    text-align: center;
 }
 
 .images {
