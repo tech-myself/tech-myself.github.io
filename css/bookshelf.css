@@ -1,13 +1,13 @@
 @font-face {
     font-family: "one47";
-    src: url("fonts/OneFortySevenRegular.woff2") format("woff2");
+    src: url("../fonts/OneFortySevenRegular.woff2") format("woff2");
 }
 
 body {
     /* font-family: 'Courier New', monospace; */
     font-family: "one47";
     background-color: #1d1d1d;
-    background-image: url('media/bookshelf/tile-bg.webp');
+    background-image: url('../media/bookshelf/tile-bg.webp');
     background-size: 150px;
     background-attachment: fixed;
     /* background-repeat: no-repeat; */
@@ -34,22 +34,22 @@ nav, main, .litem1, .litem2, aside.right-sidebar {
 .bookshelf {
     border: 15px solid;
     height: 40vh;
-    border-image: url("media/wood.jpg") 30;
-    background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.5)), url(media/wood.jpg);
+    border-image: url("../media/bookshelf/wood2.webp") 30;
+    background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.5)), url(../media/bookshelf/wood2.webp);
     background-size: cover;
 }
 
 .shelf {
     border-bottom: 20px solid;
     /* height: 40vh; */
-    border-image: url("media/wood.jpg") 30;
+    border-image: url("../media/bookshelf/wood2.webp") 30;
 }
 
 .shelf h1 {
     color: white;
-    text-shadow: 1px 1px gray;
-    background: rgba(214, 203, 118, 0.9);
-    border-radius: 10px;
+    text-shadow: 1px 1px black;
+    /* background: rgba(214, 203, 118, 0.9);
+    border-radius: 10px; */
     width: max-content;
     margin: 0 auto;
     padding: 5px;
@@ -57,9 +57,9 @@ nav, main, .litem1, .litem2, aside.right-sidebar {
 
 .bottomshelf h1 {
     color: white;
-    text-shadow: 1px 1px gray;
-    background: rgba(214, 203, 118, 0.9);
-    border-radius: 10px;
+    text-shadow: 1px 1px black;
+    /* background: rgba(214, 203, 118, 0.9);
+    border-radius: 10px; */
     width: max-content;
     margin: 0 auto;
     padding: 5px;
@@ -286,4 +286,53 @@ li a {
 .litem1 li a:hover {
     transform:rotate(-15deg); /* play with this 15deg value, works w/ negatives too! */
     /* more CSS transform options: https://developer.mozilla.org/en-US/docs/Web/CSS/transform */
+}
+
+.spoiler {
+  position: relative;
+  border-radius: 0.25em;
+  /* Apply the border radius when the label wraps to multiple lines */
+  box-decoration-break: clone;
+  transition: background-color 0.15s ease-in;
+}
+
+/* Hide the native checkbox and position it over the spoiler; see https://www.sarasoueidan.com/blog/inclusively-hiding-and-styling-checkboxes-and-radio-buttons/ */
+.spoiler input {
+  position: absolute;
+  opacity: 0;
+}
+
+/* When the checkbox has focus, display focus styles on the spoiler. */
+.spoiler:has(input:focus-visible) {
+  outline: 2px solid blue;
+  outline-offset: 2px;
+}
+
+/* Handle hidden state */
+.spoiler:has(input:not(:checked)) {
+  background-color: black;
+  color: transparent;
+  user-select: none;
+
+  /* Hide all text children, including links */
+  & * {
+    color: transparent;
+  }
+
+  /* Make the checkbox cover up links and other elements within */
+  & input {
+    inset: 0;
+  }
+}
+
+/* Handle revealed state */
+.spoiler:has(input:checked) {
+  background-color: #000000;
+  cursor: auto;
+
+  /* Position the checkbox out of the way */
+  & input {
+    width: 1px;
+    height: 1px;
+  }
 }

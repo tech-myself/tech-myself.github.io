@@ -1,7 +1,7 @@
 body {
     font-family: 'Courier New', monospace;
     background-color: #1d1d1d;
-    background-image: url('media/StarfieldSimulation.gif');
+    background-image: url('../media/backgrounds/StarfieldSimulation.gif');
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -9,7 +9,7 @@ body {
 
 @font-face {
     font-family: "whiterabbit";
-    src: url("fonts/WhiteRabbit.woff2") format("woff2");
+    src: url("../fonts/WhiteRabbit.woff2") format("woff2");
 }
 
 .box {

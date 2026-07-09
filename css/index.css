@@ -1,12 +1,15 @@
 body {
     font-family: 'Courier New', monospace;
-	/* background-color: #1a1a1a; */
-    background-image: url('media/typewriters/type-bg.png');
-    /* background-size: cover; */
-    /* background-position: top; */
-    /* background-repeat: no-repeat; */
-    background-attachment: fixed;
-    /* image-rendering: pixelated; */
+	background-color: #1d1d1d;
+    background-image: url('../media/backgrounds/matrix.gif');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+@font-face {
+    font-family: "whiterabbit";
+    src: url("../fonts/WhiteRabbit.woff2") format("woff2");
 }
 
 .box {
@@ -18,21 +21,12 @@ body {
     grid-template-rows: auto max-content 1fr auto;
 }
 
-nav, .litem1, .litem2, aside.right-sidebar {
-    border: lightgray 5px solid;
-    /* background: rgba(255, 255, 255, 0.3); */
+nav, main, .litem1, .litem2, aside.right-sidebar {
+    border: lime 2px solid;
+    background-color: #1d1d1d;
     border-radius: 5px;
     padding: 5px 5px;
-    color: black;
-    background: white;
-}
-
-main {
-    border: lightgray 5px solid;
-    border-radius: 5px;
-    padding: 5px 5px;
-    /* background: rgba(255, 255, 255, 0.3); */
-    background: white;
+    color: lime;
 }
 
 header {
@@ -71,24 +65,22 @@ aside.right-sidebar p {
 }
 
 header h1 {
-    margin: 0px 0;
-    color: White;
+    margin: 10px 0;
+    color: lime;
+    margin: 5px auto;
     text-align: center;
-    font-size: 50px;
-}
-
-header img {
-    display: block;
-    margin: 0 auto;
+    font-family: whiterabbit;
 }
 
 main p {
     margin: 5px 0;
+    font-family: whiterabbit;
+    line-height: 1;
 }
 
 nav h4 {
     text-align: center;
-    text-shadow: 1px 1px darkgray;
+    text-shadow: 2px 2px darkgreen;
 }
 
 .litem1 p {
@@ -114,7 +106,7 @@ footer p {
     font-weight: bold;
     font-size: 11px;
     padding: 5px;
-    color: white;
+    color: lime;
 }
 
 ul {
@@ -128,16 +120,20 @@ ul li::marker {
 }
 
 nav a:link {
+    color: #54ff82;
     font-weight: bold;
 }
 
 nav a:visited {
+    color: #669e65
 }
 
 nav a:hover {
+    color: #97d94c;
 }
 
 nav a:active {
+    color: #0008ff;
 }
 
 h4 {
@@ -148,5 +144,4 @@ img {
     max-width: 100%;
     display: block;
     margin: 0 auto;
-    vertical-align: bottom;
 }
