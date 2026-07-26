@@ -144,6 +144,7 @@ a:visited {
 
 a:hover {
     color: greenyellow;
+    text-decoration: none;
 }
 
 a:active {
@@ -213,4 +214,11 @@ li a {
 .litem1 li a:hover {
     transform:rotate(-15deg); /* play with this 15deg value, works w/ negatives too! */
     /* more CSS transform options: https://developer.mozilla.org/en-US/docs/Web/CSS/transform */
+}
+
+hr {
+    height: 1px;
+    border-width: 0;
+    color: lime;
+    background-color: lime;
 }
