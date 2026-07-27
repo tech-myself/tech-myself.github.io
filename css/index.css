@@ -1,6 +1,6 @@
 body {
     font-family: 'Courier New', monospace;
-	background-color: #1d1d1d;
+	background-color: black;
     background-image: url('../media/backgrounds/matrix.gif');
     background-size: cover;
     background-position: center;
@@ -31,7 +31,7 @@ nav, main, .litem1, .litem2, aside.right-sidebar {
 
 header {
     grid-row: 1 / 2;
-    grid-column: 1 / 4;
+    grid-column: 2 / 3;
 }
 
 .left-sidebar {
@@ -95,7 +95,7 @@ nav h4 {
 
 footer {
     grid-row: 4 / 5;
-    grid-column: 1 / 4;
+    grid-column: 2 / 3;
 }
 
 footer p {
@@ -119,20 +119,21 @@ ul li::marker {
     content: none;
 }
 
-nav a:link {
+a:link {
     color: #54ff82;
     font-weight: bold;
 }
 
-nav a:visited {
+a:visited {
     color: #669e65
 }
 
-nav a:hover {
+a:hover {
     color: #97d94c;
+    text-decoration: none;
 }
 
-nav a:active {
+a:active {
     color: #0008ff;
 }
 
@@ -144,4 +145,8 @@ img {
     max-width: 100%;
     display: block;
     margin: 0 auto;
+}
+
+iframe {
+    border: none;
 }

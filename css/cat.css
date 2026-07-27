@@ -137,7 +137,7 @@ nav a:visited {
 }
 
 nav a:hover {
-
+    text-decoration: none;
 }
 
 nav a:active {
