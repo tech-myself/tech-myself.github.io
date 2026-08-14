@@ -132,7 +132,8 @@ main {
 }
 
 main p {
-    margin: 5px 0;
+    margin-top: 0px;
+    margin-bottom: 25px;
     color: white;
     text-shadow: 1px 1px black;
     line-height: 1;
@@ -142,6 +143,16 @@ main h1 {
     margin: 5px 0;
     color: #a8bd20;
     text-shadow: 3px 3px black;
+}
+
+main hr {
+    border: none;
+    height: 1px;
+    background-color: #a8bd20;
+}
+
+main h5 {
+    margin: 10px
 }
 
 .bookshelf p {
