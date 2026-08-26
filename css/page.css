@@ -1,29 +1,29 @@
 @font-face {
     font-family: 'FreeMono';
-    src: url('fonts/FreeMono.woff') format('woff')
+    src: url('fonts/FreeMono.woff') format('woff');
     font-weight: normal;
     font-style: normal;
 }
 
 @font-face {
     font-family: 'FreeMono';
-    src: url('fonts/FreeMonoBold.woff') format('woff')
+    src: url('fonts/FreeMonoBold.woff') format('woff');
     font-weight: bold;
     font-style: normal;
 }
 
 @font-face {
     font-family: 'FreeMono';
-    src: url('fonts/FreeMonoOblique.woff') format('woff')
+    src: url('fonts/FreeMonoOblique.woff') format('woff');
     font-weight: normal;
     font-style: italic;
 }
 
 @font-face {
     font-family: 'FreeMono';
-    src: url('fonts/FreeMonoBoldOblique.woff') format('woff')
+    src: url('fonts/FreeMonoBoldOblique.woff') format('woff');
     font-weight: bold;
-    font-weight: italic;
+    font-style: italic;
 }
 
 /* Change --theme-color to change the sites accent color. */
