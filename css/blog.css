@@ -85,10 +85,22 @@ header h1 {
 }
 
 main p {
-    margin: 5px 0;
+    /* margin: 5px 0; */
+    margin-bottom: 10px;
     color: lime;
     text-shadow: 2px 2px darkgreen;
     line-height: 1;
+}
+
+.video-box video {
+    display: grid;
+    justify-content: center;
+    max-width: 100%;
+}
+
+audio {
+    display: block;
+    margin: 0 auto;
 }
 
 nav h4 {
@@ -151,6 +163,10 @@ a:active {
 }
 
 h4 {
+    margin: 10px 0;
+}
+
+h5 {
     margin: 10px 0;
 }
 
