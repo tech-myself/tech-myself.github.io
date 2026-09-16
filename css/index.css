@@ -78,9 +78,12 @@ main p {
     line-height: 1;
 }
 
-nav h4 {
+nav p {
     text-align: center;
     text-shadow: 2px 2px darkgreen;
+    font-weight: bold;
+    margin: 2px;
+    font-size: 15px;
 }
 
 .litem1 p {
