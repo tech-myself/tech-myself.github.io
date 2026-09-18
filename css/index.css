@@ -17,11 +17,11 @@ body {
     margin: 0px auto;
     display: grid;
     grid-gap: 10px;
-    grid-template-columns: 200px minmax(0, 1fr) 180px;
+    grid-template-columns: 200px minmax(0, 1fr) auto;
     grid-template-rows: auto max-content 1fr auto;
 }
 
-nav, main, .litem1, .litem2, aside.right-sidebar {
+nav, main, .litem1, .litem2, .site-counter, .buttons {
     border: lime 2px solid;
     background-color: #1d1d1d;
     border-radius: 5px;
@@ -70,6 +70,7 @@ header h1 {
     margin: 5px auto;
     text-align: center;
     font-family: whiterabbit;
+    font-size: 45px;
 }
 
 main p {
@@ -99,6 +100,10 @@ nav p {
 .litem2 p {
     text-align: center;
     margin: 0;
+}
+
+.buttons p img {
+    margin-bottom: 4px;
 }
 
 footer {
